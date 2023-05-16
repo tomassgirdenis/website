@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Shop</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>Izvēlies elektroniku:</h1>
+    <table>
+        <tr>
+            <td class="vi">Prece</td>
+            <td class="vi">Cena</td>
+            <td class="vi">Izvēleties</td>
+            <td class="vi">Daudzums</td>
+        </tr>
+        <tr>
+            <td>Telefons</td>
+            <td>$300</td>
+            <td><input type="checkbox" id="Telefons" value="300" name="product[]"></td>
+            <td><input type="number" id="telqt" value="1" min="1" max="10"></td>
+        </tr>
+        <tr>
+            <td>Portatīvais</td>
+            <td>$800</td>
+            <td><input type="checkbox" id="Portatīvais" value="800" name="product[]"></td>
+            <td><input type="number" id="portqt" value="1" min="1" max="10"></td>
+        </tr>
+        <tr>
+            <td>Smart TV</td>
+            <td>$600</td>
+            <td><input type="checkbox" id="smartTV" value="600" name="product[]"></td>
+            <td><input type="number" id="tvqt" value="1" min="1" max="10"></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td class="vi">Piederumi</td>
+            <td class="vi">Cena</td>
+            <td class="vi">Izvēleties</td>
+            <td class="vi">Daudzums</td>
+        </tr>
+        <tr>
+            <td>Austiņas</td>
+            <td>$50</td>
+            <td><input type="checkbox" id="austinas" value="50" name="accessories[]"></td>
+            <td><input type="number" id="austinqt" value="1" min="1" max="10"></td>
+        </tr>
+        <tr>
+            <td>Bezvada Pele</td>
+            <td>$20</td>
+            <td><input type="checkbox" id="pel" value="20" name="accessories[]"></td>
+            <td><input type="number" id="pelqt" value="1" min="1" max="10"></td>
+        </tr>
+        <tr>
+            <td>Cietais Disks</td>
+            <td>$100</td>
+            <td><input type="checkbox" id="disk" value="100" name="accessories[]"></td>
+            <td><input type="number" id="diskqt" value="1" min="1" max="10"></td>
+        </tr>
+    </table>
+
+	<table>
+	  <tr>
+		<td>Kopā:</td>
+		<td><button type="button" onclick="reiķināt()">Aprēķināt</button></td>
+		<td id="total"></td>
+	  </tr>
+	</table>
+	
+	<script src="script.js"></script>
+</body>
+</html>
